@@ -4,13 +4,12 @@
        Title="TidyUp" Height="580" Width="465" Topmost="True" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
     <Grid Margin="0,0,0,2">
         <Image x:Name="img" HorizontalAlignment="Left" Height="287" Margin="10,10,0,0" VerticalAlignment="Top" Width="444"/>
-        <TextBox x:Name="txt" HorizontalAlignment="Left" Height="63" Margin="10,355,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="444"/>
+        <TextBox x:Name="txt" HorizontalAlignment="Left" Height="23" Margin="10,355,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="444"/>
         <Button Content="OK" HorizontalAlignment="Left" Margin="357,521,0,0" VerticalAlignment="Top" Width="94" Height="27" Click="OK_Click" RenderTransformOrigin="0.16,2.519"/>
-        <Button Content="Next &gt;" HorizontalAlignment="Left" Margin="159,521,0,0" VerticalAlignment="Top" Width="94" Height="27" Click="Next_Click" />
         <TextBlock x:Name="sts" HorizontalAlignment="Left" Margin="76,488,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="375"/>
-        <Button Content="Skip" HorizontalAlignment="Left" Margin="258,521,0,0" VerticalAlignment="Top" Width="94" Height="27" Click="Skip_Click" />
+        <Button Content="Next &gt;" HorizontalAlignment="Left" Margin="258,521,0,0" VerticalAlignment="Top" Width="94" Height="27" Click="Skip_Click" />
         <TextBlock x:Name="sts_Copy" HorizontalAlignment="Left" Margin="16,488,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="60" Text="Debug :"/>
-        <ListView x:Name="lv" HorizontalAlignment="Left" Height="128" Margin="10,355,0,0" VerticalAlignment="Top" Width="444">
+        <ListView x:Name="lv" HorizontalAlignment="Left" Height="128" Margin="10,355,0,0" VerticalAlignment="Top" Width="444" SelectionChanged="lv_SelectionChanged" SelectionMode="Single">
             <ListView.View>
                 <GridView>
                     <GridViewColumn/>
